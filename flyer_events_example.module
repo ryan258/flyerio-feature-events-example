@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the flyer events example feature.
+ */
+
+include_once 'flyer_events_example.features.inc';
