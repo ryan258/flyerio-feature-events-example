@@ -95,7 +95,7 @@ function flyer_events_example_views_default_views() {
     'skip_empty_values' => 0,
   );
   $handler->display->display_options['fields']['field_website']['field_api_classes'] = TRUE;
-  /* Field: Field: Main Image */
+  /* Field: Content: Main Image */
   $handler->display->display_options['fields']['field_image_main']['id'] = 'field_image_main';
   $handler->display->display_options['fields']['field_image_main']['table'] = 'field_data_field_image_main';
   $handler->display->display_options['fields']['field_image_main']['field'] = 'field_image_main';
@@ -123,7 +123,7 @@ function flyer_events_example_views_default_views() {
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Sort criterion: Content: Date -  start date (field_date) */
+  /* Sort criterion: Content: Date (field_date) */
   $handler->display->display_options['sorts']['field_date_value']['id'] = 'field_date_value';
   $handler->display->display_options['sorts']['field_date_value']['table'] = 'field_data_field_date';
   $handler->display->display_options['sorts']['field_date_value']['field'] = 'field_date_value';
@@ -262,7 +262,7 @@ function flyer_events_example_views_default_views() {
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['exposed_block'] = TRUE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Content: Date -  start date (field_date) */
+  /* Sort criterion: Content: Date (field_date) */
   $handler->display->display_options['sorts']['field_date_value']['id'] = 'field_date_value';
   $handler->display->display_options['sorts']['field_date_value']['table'] = 'field_data_field_date';
   $handler->display->display_options['sorts']['field_date_value']['field'] = 'field_date_value';
@@ -388,13 +388,11 @@ function flyer_events_example_views_default_views() {
     4 => 0,
   );
   $handler->display->display_options['filters']['field_music_type_target_id']['expose']['reduce'] = TRUE;
-  /* Filter criterion: Content: Date - end date (field_date:value2) */
+  /* Filter criterion: Content: Date (field_date:value2) */
   $handler->display->display_options['filters']['field_date_value2']['id'] = 'field_date_value2';
   $handler->display->display_options['filters']['field_date_value2']['table'] = 'field_data_field_date';
   $handler->display->display_options['filters']['field_date_value2']['field'] = 'field_date_value2';
   $handler->display->display_options['filters']['field_date_value2']['operator'] = '>=';
-  $handler->display->display_options['filters']['field_date_value2']['form_type'] = 'date_text';
-  $handler->display->display_options['filters']['field_date_value2']['default_date'] = 'now';
   $handler->display->display_options['path'] = 'app-api';
 
   /* Display: p: /app-api/tomorrow */
@@ -411,7 +409,7 @@ function flyer_events_example_views_default_views() {
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['exposed_block'] = TRUE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Content: Date -  start date (field_date) */
+  /* Sort criterion: Content: Date (field_date) */
   $handler->display->display_options['sorts']['field_date_value']['id'] = 'field_date_value';
   $handler->display->display_options['sorts']['field_date_value']['table'] = 'field_data_field_date';
   $handler->display->display_options['sorts']['field_date_value']['field'] = 'field_date_value';
@@ -537,12 +535,10 @@ function flyer_events_example_views_default_views() {
     4 => 0,
   );
   $handler->display->display_options['filters']['field_music_type_target_id']['expose']['reduce'] = TRUE;
-  /* Filter criterion: Content: Date -  start date (field_date) */
+  /* Filter criterion: Content: Date (field_date) */
   $handler->display->display_options['filters']['field_date_value']['id'] = 'field_date_value';
   $handler->display->display_options['filters']['field_date_value']['table'] = 'field_data_field_date';
   $handler->display->display_options['filters']['field_date_value']['field'] = 'field_date_value';
-  $handler->display->display_options['filters']['field_date_value']['form_type'] = 'date_text';
-  $handler->display->display_options['filters']['field_date_value']['default_date'] = 'tomorrow';
   $handler->display->display_options['path'] = 'app-api/tomorrow';
 
   /* Display: p: /app-api/weekend */
@@ -559,7 +555,7 @@ function flyer_events_example_views_default_views() {
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['exposed_block'] = TRUE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Content: Date -  start date (field_date) */
+  /* Sort criterion: Content: Date (field_date) */
   $handler->display->display_options['sorts']['field_date_value']['id'] = 'field_date_value';
   $handler->display->display_options['sorts']['field_date_value']['table'] = 'field_data_field_date';
   $handler->display->display_options['sorts']['field_date_value']['field'] = 'field_date_value';
@@ -685,12 +681,11 @@ function flyer_events_example_views_default_views() {
     4 => 0,
   );
   $handler->display->display_options['filters']['field_music_type_target_id']['expose']['reduce'] = TRUE;
-  /* Filter criterion: Content: Date -  start date (field_date) */
+  /* Filter criterion: Content: Date (field_date) */
   $handler->display->display_options['filters']['field_date_value']['id'] = 'field_date_value';
   $handler->display->display_options['filters']['field_date_value']['table'] = 'field_data_field_date';
   $handler->display->display_options['filters']['field_date_value']['field'] = 'field_date_value';
   $handler->display->display_options['filters']['field_date_value']['operator'] = 'between';
-  $handler->display->display_options['filters']['field_date_value']['form_type'] = 'date_text';
   $handler->display->display_options['path'] = 'app-api/weekend';
 
   /* Display: p: /app-api/week */
@@ -707,7 +702,7 @@ function flyer_events_example_views_default_views() {
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['exposed_block'] = TRUE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Content: Date -  start date (field_date) */
+  /* Sort criterion: Content: Date (field_date) */
   $handler->display->display_options['sorts']['field_date_value']['id'] = 'field_date_value';
   $handler->display->display_options['sorts']['field_date_value']['table'] = 'field_data_field_date';
   $handler->display->display_options['sorts']['field_date_value']['field'] = 'field_date_value';
@@ -833,13 +828,11 @@ function flyer_events_example_views_default_views() {
     4 => 0,
   );
   $handler->display->display_options['filters']['field_music_type_target_id']['expose']['reduce'] = TRUE;
-  /* Filter criterion: Content: Date - end date (field_date:value2) */
+  /* Filter criterion: Content: Date (field_date:value2) */
   $handler->display->display_options['filters']['field_date_value2']['id'] = 'field_date_value2';
   $handler->display->display_options['filters']['field_date_value2']['table'] = 'field_data_field_date';
   $handler->display->display_options['filters']['field_date_value2']['field'] = 'field_date_value2';
   $handler->display->display_options['filters']['field_date_value2']['operator'] = '>=';
-  $handler->display->display_options['filters']['field_date_value2']['form_type'] = 'date_text';
-  $handler->display->display_options['filters']['field_date_value2']['default_date'] = 'now';
   $handler->display->display_options['path'] = 'app-api/week';
 
   /* Display: p: /app-api/today */
@@ -856,7 +849,7 @@ function flyer_events_example_views_default_views() {
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['exposed_block'] = TRUE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Content: Date -  start date (field_date) */
+  /* Sort criterion: Content: Date (field_date) */
   $handler->display->display_options['sorts']['field_date_value']['id'] = 'field_date_value';
   $handler->display->display_options['sorts']['field_date_value']['table'] = 'field_data_field_date';
   $handler->display->display_options['sorts']['field_date_value']['field'] = 'field_date_value';
@@ -982,12 +975,10 @@ function flyer_events_example_views_default_views() {
     4 => 0,
   );
   $handler->display->display_options['filters']['field_music_type_target_id']['expose']['reduce'] = TRUE;
-  /* Filter criterion: Content: Date -  start date (field_date) */
+  /* Filter criterion: Content: Date (field_date) */
   $handler->display->display_options['filters']['field_date_value']['id'] = 'field_date_value';
   $handler->display->display_options['filters']['field_date_value']['table'] = 'field_data_field_date';
   $handler->display->display_options['filters']['field_date_value']['field'] = 'field_date_value';
-  $handler->display->display_options['filters']['field_date_value']['form_type'] = 'date_text';
-  $handler->display->display_options['filters']['field_date_value']['default_date'] = 'today';
   $handler->display->display_options['path'] = 'app-api/today';
   $export['app_api'] = $view;
 

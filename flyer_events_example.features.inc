@@ -33,7 +33,7 @@ function flyer_events_example_node_info() {
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
-      'title_label' => t('Field Title'),
+      'title_label' => t('Field Title Yo'),
       'help' => '',
     ),
   );
